@@ -1,6 +1,40 @@
 import "./Home.css";
+import { useState, useEffect } from "react";
 
 function Home() {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const eventDate = new Date("2026-01-24T00:00:00").getTime();
+      const now = new Date().getTime();
+      const difference = eventDate - now;
+
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor(
+            (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          ),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000),
+        });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    calculateTimeLeft();
+    const timer = setInterval(calculateTimeLeft, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -18,6 +52,29 @@ function Home() {
             <a href="#about" className="btn btn-secondary">
               Learn More
             </a>
+          </div>
+
+          {/* Countdown Timer */}
+          <div className="countdown-timer">
+            <h3 className="countdown-title">Event Starts In</h3>
+            <div className="countdown-boxes">
+              <div className="countdown-box">
+                <span className="countdown-value">{timeLeft.days}</span>
+                <span className="countdown-label">Days</span>
+              </div>
+              <div className="countdown-box">
+                <span className="countdown-value">{timeLeft.hours}</span>
+                <span className="countdown-label">Hours</span>
+              </div>
+              <div className="countdown-box">
+                <span className="countdown-value">{timeLeft.minutes}</span>
+                <span className="countdown-label">Minutes</span>
+              </div>
+              <div className="countdown-box">
+                <span className="countdown-value">{timeLeft.seconds}</span>
+                <span className="countdown-label">Seconds</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
