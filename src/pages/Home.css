@@ -194,6 +194,59 @@
   overflow-wrap: break-word;
 }
 
+/* Countdown Timer */
+.countdown-timer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.countdown-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.countdown-boxes {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.countdown-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.countdown-box:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.countdown-value {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.25rem;
@@ -240,6 +293,27 @@
   .video-title {
     font-size: 1rem;
     padding: 0.875rem;
+  }
+
+  .countdown-title {
+    font-size: 1.3rem;
+  }
+
+  .countdown-boxes {
+    gap: 1rem;
+  }
+
+  .countdown-box {
+    padding: 1.25rem 1.5rem;
+    min-width: 80px;
+  }
+
+  .countdown-value {
+    font-size: 2.5rem;
+  }
+
+  .countdown-label {
+    font-size: 0.85rem;
   }
 }
 
@@ -318,6 +392,35 @@
   .cta-section p {
     font-size: 1rem;
   }
+
+  .countdown-timer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .countdown-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .countdown-boxes {
+    gap: 0.75rem;
+  }
+
+  .countdown-box {
+    padding: 1rem 1.25rem;
+    min-width: 70px;
+    border-radius: 8px;
+  }
+
+  .countdown-value {
+    font-size: 2rem;
+  }
+
+  .countdown-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -331,5 +434,18 @@
 
   .hero {
     padding: 2rem 0.5rem;
+  }
+
+  .countdown-box {
+    padding: 0.875rem 1rem;
+    min-width: 65px;
+  }
+
+  .countdown-value {
+    font-size: 1.75rem;
+  }
+
+  .countdown-label {
+    font-size: 0.7rem;
   }
 }
