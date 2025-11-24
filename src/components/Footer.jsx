@@ -6,7 +6,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <h3>JXLDS 14.0</h3>
-          <p>A 2-day leadership conference by AIESEC in University of Sri Jayewardenepura</p>
+          <p>A 2-day leadership conference by AIESEC in USJ</p>
         </div>
 
         <div className="footer-section">
@@ -43,7 +43,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 JXLDS 14.0. All rights reserved. | Organized by AIESEC in University of Sri Jayewardenepura</p>
+        <p>&copy; 2025 JXLDS 14.0. All rights reserved. | AIESEC in USJ</p>
       </div>
     </footer>
   );

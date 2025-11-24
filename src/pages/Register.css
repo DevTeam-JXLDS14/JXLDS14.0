@@ -5,10 +5,12 @@
 
 .register-header {
   text-align: center;
-  padding: 2rem 0 3rem;
+  padding: 2rem 1rem 3rem;
   background: linear-gradient(135deg, #037ef3 0%, #0262c4 100%);
   color: white;
   margin: -2rem -2rem 2rem -2rem;
+  width: calc(100% + 4rem);
+  box-sizing: border-box;
 }
 
 .register-header h1 {
@@ -66,6 +68,12 @@
   line-height: 1.8;
 }
 
+.event-info ul li {
+  margin-bottom: 0.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 .form-container {
   background: white;
   padding: 2rem;
@@ -118,6 +126,7 @@
 @media (max-width: 968px) {
   .register-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .event-info {
@@ -135,12 +144,110 @@
   }
 
   .register-header {
-    margin: -1rem -1rem 1rem -1rem;
-    padding: 1.5rem 1rem 2rem;
+    margin: -1rem -1rem 1.5rem -1rem;
+    padding: 2rem 1rem;
+  }
+
+  .register-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .register-header p {
+    font-size: 1rem;
   }
 
   .form-container,
   .event-info {
     padding: 1.5rem;
+  }
+
+  .info-item strong {
+    min-width: 120px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-page {
+    padding: 0.5rem;
+  }
+
+  .register-header {
+    margin: -0.5rem -0.5rem 1rem -0.5rem;
+    padding: 1.75rem 0.75rem;
+    width: calc(100% + 1rem);
+  }
+
+  .register-header h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .register-header p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .register-content {
+    gap: 1.25rem;
+  }
+
+  .form-container,
+  .event-info {
+    padding: 1rem;
+  }
+
+  .event-info h2,
+  .form-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .event-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .info-item strong {
+    min-width: auto;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  .event-info ul {
+    font-size: 0.9rem;
+    padding-left: 1.25rem;
+  }
+
+  .contact-info {
+    padding: 1rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+
+  .form-instruction {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .register-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .register-page {
+    padding: 0.25rem;
   }
 }

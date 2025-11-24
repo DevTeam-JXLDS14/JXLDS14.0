@@ -13,9 +13,9 @@ function Facilitators() {
       <div className="container">
         <div className="team-intro">
           <p>
-            JXLDS 14.0 brings together accomplished facilitators who are experts in their fields.
-            Through interactive sessions and workshops, they will guide you on your leadership journey
-            and share valuable insights from their experiences.
+            JXLDS 14.0 brings together accomplished facilitators who are experts in their fields. 
+            Through interactive sessions and workshops, they'll guide you on your leadership journey 
+            and share valuable insights from their experience.
           </p>
         </div>
 

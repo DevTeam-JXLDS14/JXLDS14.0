@@ -1,45 +1,84 @@
-// Sample OC members data
-// Replace with actual member information and images
+// JXLDS 14.0 Organizing Committee Members
 
 export const ocMembers = [
   {
-    name: "John Doe",
-    role: "President",
-    image: "https://via.placeholder.com/300x300?text=President"
+    name: "Anupa",
+    role: "Organizing Committee Member",
+    image: "/images/oc/ANUPA.webp",
   },
   {
-    name: "Jane Smith",
-    role: "Vice President",
-    image: "https://via.placeholder.com/300x300?text=VP"
+    name: "Darshana",
+    role: "Organizing Committee Member",
+    image: "/images/oc/DARSHANA.webp",
   },
   {
-    name: "Mike Johnson",
-    role: "Secretary",
-    image: "https://via.placeholder.com/300x300?text=Secretary"
+    name: "Dinethmin",
+    role: "Organizing Committee Member",
+    image: "/images/oc/DINETHMIN.webp",
   },
   {
-    name: "Sarah Williams",
-    role: "Treasurer",
-    image: "https://via.placeholder.com/300x300?text=Treasurer"
+    name: "Dinithi",
+    role: "Organizing Committee Member",
+    image: "/images/oc/DINITHI.webp",
   },
   {
-    name: "David Brown",
-    role: "Marketing Director",
-    image: "https://via.placeholder.com/300x300?text=Marketing"
+    name: "Dinuka",
+    role: "Organizing Committee Member",
+    image: "/images/oc/DINUKA.webp",
   },
   {
-    name: "Emily Davis",
-    role: "Logistics Director",
-    image: "https://via.placeholder.com/300x300?text=Logistics"
+    name: "Himeth",
+    role: "Organizing Committee Member",
+    image: "/images/oc/HIMETH.webp",
   },
   {
-    name: "Chris Wilson",
-    role: "Finance Director",
-    image: "https://via.placeholder.com/300x300?text=Finance"
+    name: "Isuru",
+    role: "Organizing Committee Member",
+    image: "/images/oc/ISURU.webp",
   },
   {
-    name: "Lisa Anderson",
-    role: "Communications Director",
-    image: "https://via.placeholder.com/300x300?text=Comms"
-  }
+    name: "Jemima",
+    role: "Organizing Committee Member",
+    image: "/images/oc/Jemima.webp",
+  },
+  {
+    name: "Madhuka",
+    role: "Organizing Committee Member",
+    image: "/images/oc/MADHUKA.webp",
+  },
+  {
+    name: "Melanie",
+    role: "Organizing Committee Member",
+    image: "/images/oc/MELANIE.webp",
+  },
+  {
+    name: "Navapriyah",
+    role: "Organizing Committee Member",
+    image: "/images/oc/NAVAPRIYAH.webp",
+  },
+  {
+    name: "Pasandi",
+    role: "Organizing Committee Member",
+    image: "/images/oc/PASANDI.webp",
+  },
+  {
+    name: "Pumuthu",
+    role: "Organizing Committee Member",
+    image: "/images/oc/PUMUTHU.webp",
+  },
+  {
+    name: "Saumya",
+    role: "Organizing Committee Member",
+    image: "/images/oc/SAUMYA.webp",
+  },
+  {
+    name: "Shenan",
+    role: "Organizing Committee Member",
+    image: "/images/oc/SHENAN.webp",
+  },
+  {
+    name: "Thashmil",
+    role: "Organizing Committee Member",
+    image: "/images/oc/THASHMIL.webp",
+  },
 ];

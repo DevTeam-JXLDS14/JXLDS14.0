@@ -27,10 +27,10 @@ function Register() {
           <h3>What to Expect</h3>
           <ul>
             <li>Interactive leadership workshops</li>
-            <li>Networking opportunities</li>
-            <li>Expert facilitators</li>
+            <li>Networking with like-minded peers</li>
+            <li>Expert facilitators & sessions</li>
             <li>Certificate of participation</li>
-            <li>Meals and refreshments</li>
+            <li>Meals & refreshments included</li>
           </ul>
 
           <h3>Requirements</h3>
@@ -67,7 +67,7 @@ function Register() {
 
           <div className="contact-info">
             <h3>Need Help?</h3>
-            <p>If you have any questions about registration, please contact us:</p>
+            <p>Questions about registration? Contact us:</p>
             <p>Email: info@jxlds.com</p>
             <p>Phone: +94 XX XXX XXXX</p>
           </div>

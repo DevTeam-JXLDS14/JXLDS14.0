@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Original photo folders (JPEG sources - converted to WebP)
+OC Photos/
+Faci Photos/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -13,9 +13,9 @@ function OrganizingCommittee() {
       <div className="container">
         <div className="team-intro">
           <p>
-            Our Organizing Committee comprises passionate individuals committed to creating
-            an exceptional leadership experience. Each member brings unique skills and
-            dedication to ensure JXLDS 14.0 is a transformative event for all participants.
+            Our Organizing Committee comprises passionate individuals committed to creating 
+            an exceptional leadership experience. Each member brings unique skills and 
+            dedication to make JXLDS 14.0 transformative for all participants.
           </p>
         </div>
 

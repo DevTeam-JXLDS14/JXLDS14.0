@@ -5,31 +5,31 @@ export const products = [
   {
     name: "JXLDS 14.0 T-Shirt",
     price: "1500",
-    description: "Premium quality cotton t-shirt with JXLDS 14.0 branding. Available in multiple sizes.",
+    description: "Premium cotton tee with JXLDS 14.0 branding. Multiple sizes available.",
     image: "https://via.placeholder.com/300x300?text=T-Shirt"
   },
   {
     name: "JXLDS Tote Bag",
     price: "800",
-    description: "Eco-friendly canvas tote bag perfect for daily use. Features the JXLDS logo.",
+    description: "Eco-friendly canvas bag for daily use. Features the JXLDS logo.",
     image: "https://via.placeholder.com/300x300?text=Tote+Bag"
   },
   {
     name: "JXLDS Notebook",
     price: "500",
-    description: "A5 spiral notebook with JXLDS branding. 100 pages of quality paper.",
+    description: "A5 spiral notebook with JXLDS branding. 100 quality pages.",
     image: "https://via.placeholder.com/300x300?text=Notebook"
   },
   {
     name: "JXLDS Hoodie",
     price: "3000",
-    description: "Comfortable hoodie with JXLDS 14.0 design. Perfect for cooler weather.",
+    description: "Comfortable hoodie with JXLDS 14.0 design. Perfect for cool weather.",
     image: "https://via.placeholder.com/300x300?text=Hoodie"
   },
   {
     name: "JXLDS Water Bottle",
     price: "1200",
-    description: "Stainless steel water bottle with JXLDS logo. Keeps drinks cold for 24 hours.",
+    description: "Stainless steel bottle with logo. Keeps drinks cold for 24 hours.",
     image: "https://via.placeholder.com/300x300?text=Water+Bottle"
   },
   {

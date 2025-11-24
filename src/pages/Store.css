@@ -36,6 +36,8 @@
   color: #444;
   max-width: 800px;
   margin: 0 auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .products-grid {
@@ -43,6 +45,7 @@
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .purchase-info {
@@ -62,13 +65,20 @@
   line-height: 1.8;
   color: #444;
   margin-bottom: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .purchase-info strong {
   color: #037ef3;
+  word-break: break-word;
 }
 
 @media (max-width: 768px) {
+  .page-header {
+    padding: 3rem 1.5rem;
+  }
+
   .page-header h1 {
     font-size: 2rem;
   }
@@ -88,5 +98,62 @@
 
   .purchase-info {
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 2rem 0.75rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .page-header p {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .store-intro {
+    margin-bottom: 2rem;
+  }
+
+  .store-intro p {
+    font-size: 0.95rem;
+    padding: 0 0.25rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .purchase-info {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .purchase-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .purchase-info p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    padding: 1.25rem 0.5rem;
   }
 }

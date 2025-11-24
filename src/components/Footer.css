@@ -28,6 +28,8 @@
 .footer-section p {
   line-height: 1.6;
   margin-bottom: 0.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .footer-section ul {
@@ -75,11 +77,62 @@
   margin: 0;
   font-size: 0.9rem;
   color: #999;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 0 1rem;
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1.5rem 1rem;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 0.75rem 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .footer-container {
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-section h3,
+  .footer-section h4 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-section p,
+  .footer-section ul li {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .footer-bottom {
+    padding-top: 0.75rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {
+    padding: 1.75rem 0.5rem 0.75rem;
+  }
+
+  .footer-section h3,
+  .footer-section h4 {
+    font-size: 0.95rem;
   }
 }

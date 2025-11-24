@@ -33,6 +33,8 @@
   font-size: 1.25rem;
   margin: 0 0 0.5rem 0;
   color: #1a1a1a;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .card-role {
@@ -40,6 +42,8 @@
   color: #037ef3;
   margin: 0 0 0.5rem 0;
   font-weight: 600;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .card-bio {
@@ -47,10 +51,55 @@
   color: #666;
   line-height: 1.5;
   margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
   .card-image {
     height: 200px;
+  }
+
+  .card-content {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-image {
+    height: 200px;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card-name {
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+  .card-role {
+    font-size: 0.9rem;
+  }
+
+  .card-bio {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-image {
+    height: 180px;
+  }
+
+  .card-name {
+    font-size: 1rem;
   }
 }
