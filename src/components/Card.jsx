@@ -1,11 +1,24 @@
 import "./Card.css";
 
-function Card({ image, name, role, bio, instagram, onClick }) {
+function Card({
+  image,
+  name,
+  role,
+  bio,
+  instagram,
+  onClick,
+  isChair,
+  isEmoji,
+}) {
   return (
-    <div className="card">
+    <div className={`card ${isChair ? "card-golden" : ""}`}>
       <div className="card-clickable" onClick={onClick}>
         <div className="card-image">
-          <img src={image} alt={name} />
+          {isEmoji ? (
+            <div className="card-emoji">{image}</div>
+          ) : (
+            <img src={image} alt={name} />
+          )}
         </div>
         <div className="card-content">
           <h3 className="card-name">{name}</h3>

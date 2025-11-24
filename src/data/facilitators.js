@@ -1,29 +1,108 @@
-// Sample facilitators data
-// Replace with actual facilitator information and images
+// JXLDS 14.0 Facilitators
 
 export const facilitators = [
   {
-    name: "Dr. Samantha Lee",
-    expertise: "Leadership & Strategy",
-    bio: "20+ years experience in leadership development",
-    image: "https://via.placeholder.com/300x300?text=Facilitator+1"
+    name: "Chair",
+    expertise: "Conference Chair",
+    bio: "",
+    image: "🪑",
+    isChair: true,
+    isEmoji: true,
   },
   {
-    name: "Prof. Michael Chen",
-    expertise: "Team Building",
-    bio: "Expert in organizational behavior and team dynamics",
-    image: "https://via.placeholder.com/300x300?text=Facilitator+2"
+    name: "Amaya",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/amaya.webp",
   },
   {
-    name: "Ms. Rachel Green",
-    expertise: "Communication Skills",
-    bio: "Award-winning speaker and communication coach",
-    image: "https://via.placeholder.com/300x300?text=Facilitator+3"
+    name: "Anuththara",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/anuththara.webp",
   },
   {
-    name: "Mr. James Taylor",
-    expertise: "Innovation & Problem Solving",
-    bio: "Serial entrepreneur and innovation consultant",
-    image: "https://via.placeholder.com/300x300?text=Facilitator+4"
-  }
+    name: "Ashintha",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/ashintha.webp",
+  },
+  {
+    name: "Hari",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/hari.webp",
+  },
+  {
+    name: "Ihansa",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/Ihansa.webp",
+  },
+  {
+    name: "Kaveesha",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/kaveesha.webp",
+  },
+  {
+    name: "Laksith",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/laksithn (1).webp",
+  },
+  {
+    name: "Mahima",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/mahima.webp",
+  },
+  {
+    name: "Manthila",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/manthila.webp",
+  },
+  {
+    name: "Mevithri",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/mevithri.webp",
+  },
+  {
+    name: "Nethum",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/nethum (3).webp",
+  },
+  {
+    name: "Sasindi",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/sasindi.webp",
+  },
+  {
+    name: "Sathmi",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/sathmi.webp",
+  },
+  {
+    name: "Sithika",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/sithika.webp",
+  },
+  {
+    name: "Yehani",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/yehani.webp",
+  },
+  {
+    name: "Savindu",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/savindu.webp",
+  },
 ];
