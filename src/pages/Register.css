@@ -1,0 +1,146 @@
+.register-page {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.register-header {
+  text-align: center;
+  padding: 2rem 0 3rem;
+  background: linear-gradient(135deg, #037ef3 0%, #0262c4 100%);
+  color: white;
+  margin: -2rem -2rem 2rem -2rem;
+}
+
+.register-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.register-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+
+.event-info {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.event-info h2 {
+  color: #037ef3;
+  margin-bottom: 1.5rem;
+}
+
+.event-info h3 {
+  color: #1a1a1a;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item strong {
+  color: #037ef3;
+  display: inline-block;
+  min-width: 150px;
+}
+
+.event-info ul {
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  color: #037ef3;
+  margin-bottom: 1rem;
+}
+
+.form-instruction {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.form-embed {
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form-note {
+  background: #fff3cd;
+  padding: 1rem;
+  border-radius: 4px;
+  color: #856404;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.contact-info {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.contact-info h3 {
+  color: #037ef3;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+@media (max-width: 968px) {
+  .register-content {
+    grid-template-columns: 1fr;
+  }
+
+  .event-info {
+    position: static;
+  }
+
+  .register-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-page {
+    padding: 1rem;
+  }
+
+  .register-header {
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .form-container,
+  .event-info {
+    padding: 1.5rem;
+  }
+}

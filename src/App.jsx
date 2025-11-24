@@ -1,0 +1,31 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Register from './pages/Register';
+import OrganizingCommittee from './pages/OrganizingCommittee';
+import Facilitators from './pages/Facilitators';
+import Store from './pages/Store';
+import './App.css';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/organizing-committee" element={<OrganizingCommittee />} />
+            <Route path="/facilitators" element={<Facilitators />} />
+            <Route path="/store" element={<Store />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
