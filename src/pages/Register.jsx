@@ -1,4 +1,4 @@
-import './Register.css';
+import "./Register.css";
 
 function Register() {
   return (
@@ -46,11 +46,11 @@ function Register() {
           <p className="form-instruction">
             Please fill out the form below to register for JXLDS 14.0
           </p>
-          
-          {/* Google Form Embed - Replace with actual Google Form URL */}
+
+          {/* Tally Form Embed */}
           <div className="form-embed">
             <iframe
-              src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+              src="https://tally.so/embed/nPMpre?alignLeft=1&hideTitle=1&dynamicHeight=1"
               width="100%"
               height="800"
               frameBorder="0"
@@ -60,9 +60,6 @@ function Register() {
             >
               Loading…
             </iframe>
-            <p className="form-note">
-              * Please replace the iframe src with your actual Google Form embed URL
-            </p>
           </div>
 
           <div className="contact-info">
