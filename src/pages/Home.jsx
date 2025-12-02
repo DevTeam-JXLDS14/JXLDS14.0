@@ -84,16 +84,16 @@ function Home() {
         <div className="container">
           <h2>About JXLDS 14.0</h2>
           <p>
-            JXLDS (Junior Executive Leadership Development Seminar) is AIESEC
+            JXLDS (Jayewardenepura Exchange Leadership Development Seminar) is AIESEC
             USJ's flagship leadership conference. This intensive 2-day program
             develops leadership potential through interactive workshops,
             insightful sessions, and valuable networking.
           </p>
           <p>
             Join us for a transformative experience that will equip you with
-            essential leadership skills, broaden your perspectives, and connect
+            essential leadership skills, broaden your perspectives, connect
             you with passionate individuals committed to making a positive
-            impact.
+            impact, and of course make memories that will last a lifetime.
           </p>
         </div>
       </section>

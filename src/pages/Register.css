@@ -1,6 +1,14 @@
 .register-page {
   min-height: 100vh;
   padding: 2rem;
+  background-color: transparent;
+}
+
+/* Page-level background: show #658d97 everywhere that isn't a div with its own background */
+html,
+body {
+  height: 100%;
+  background-color: #658d97;
 }
 
 .register-header {
@@ -32,7 +40,7 @@
 }
 
 .event-info {
-  background: white;
+  background: #658d97;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -121,6 +129,50 @@
 .contact-info p {
   margin-bottom: 0.5rem;
   color: #444;
+}
+
+/* Contacts layout */
+.contacts {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: transparent;
+}
+
+.contact-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0,0,0,0.06);
+}
+
+.contact-details strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.contact-details p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.contact-details a {
+  color: #037ef3;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .contacts {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 }
 
 @media (max-width: 968px) {

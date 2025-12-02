@@ -10,13 +10,13 @@ function OrganizingCommittee() {
     <div className="oc-page">
       <div className="page-header">
         <h1>Organizing Committee</h1>
-        <p>Meet the dedicated team behind JXLDS 14.0</p>
+        <p>Meet the Vanguards</p>
       </div>
 
       <div className="container">
         <div className="team-intro">
           <p>
-            Our Organizing Committee comprises passionate individuals committed
+            The "Somi Mandalaya" comprises passionate individuals committed
             to creating an exceptional leadership experience. Each member brings
             unique skills and dedication to make JXLDS 14.0 transformative for
             all participants.
