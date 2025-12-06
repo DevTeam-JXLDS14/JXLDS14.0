@@ -1,5 +1,6 @@
 import "./Home.css";
 import { useState, useEffect, useRef } from "react";
+import StarsAnimation from "../components/StarsAnimation";
 
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
@@ -64,6 +65,7 @@ function Home() {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
+        <StarsAnimation />
         <div className="hero-content">
           <h1>JXLDS 14.0</h1>
           <p className="hero-subtitle">Empowering Leaders of Tomorrow</p>
