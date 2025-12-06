@@ -160,6 +160,7 @@ function RegistrationsGoogle() {
         privacyConsent: false,
       });
     } catch (error) {
+      console.error("Form submission error:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
