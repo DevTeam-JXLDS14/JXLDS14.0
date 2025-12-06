@@ -1,5 +1,5 @@
 import "./Home.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
@@ -8,6 +8,9 @@ function Home() {
     minutes: 0,
     seconds: 0,
   });
+  const [isSticky, setIsSticky] = useState(false);
+  const countdownRef = useRef(null);
+  const [countdownTopPosition, setCountdownTopPosition] = useState(0);
 
   useEffect(() => {
     const calculateTimeLeft = () => {
@@ -31,9 +34,31 @@ function Home() {
 
     calculateTimeLeft();
     const timer = setInterval(calculateTimeLeft, 1000);
-
     return () => clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    if (countdownRef.current) {
+      setCountdownTopPosition(countdownRef.current.offsetTop);
+    }
+  }, []);
+
+  // ⭐ FIXED STICKY ACTIVATION LOGIC
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.scrollY || document.documentElement.scrollTop;
+
+      if (scrollTop >= countdownTopPosition) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [countdownTopPosition]);
 
   return (
     <div className="home">
@@ -45,6 +70,7 @@ function Home() {
           <p className="hero-description">
             The flagship conference by AIESEC in USJ
           </p>
+
           <div className="hero-buttons">
             <a href="/register" className="btn btn-primary">
               Register Now
@@ -55,21 +81,27 @@ function Home() {
           </div>
 
           {/* Countdown Timer */}
-          <div className="countdown-timer">
+          <div
+            ref={countdownRef}
+            className={`countdown-timer ${isSticky ? "countdown-sticky" : ""}`}
+          >
             <h3 className="countdown-title">Event Starts In</h3>
             <div className="countdown-boxes">
               <div className="countdown-box">
                 <span className="countdown-value">{timeLeft.days}</span>
                 <span className="countdown-label">Days</span>
               </div>
+
               <div className="countdown-box">
                 <span className="countdown-value">{timeLeft.hours}</span>
                 <span className="countdown-label">Hours</span>
               </div>
+
               <div className="countdown-box">
                 <span className="countdown-value">{timeLeft.minutes}</span>
                 <span className="countdown-label">Minutes</span>
               </div>
+
               <div className="countdown-box">
                 <span className="countdown-value">{timeLeft.seconds}</span>
                 <span className="countdown-label">Seconds</span>
@@ -84,9 +116,11 @@ function Home() {
         <div className="container">
           <h2>About JXLDS 14.0</h2>
           <p>
-            Jayewardenepura Exchange Leadership Development Seminar (JXLDS) is a 2-day conference organized by
-            AIESEC in University of Sri Jayewardenepura for the 14th consecutive year that creates a common
-            platform for our potential leaders to enhance their leadership skills.
+            Jayewardenepura Exchange Leadership Development Seminar (JXLDS) is a
+            2-day conference organized by AIESEC in University of Sri
+            Jayewardenepura for the 14th consecutive year that creates a common
+            platform for our potential leaders to enhance their leadership
+            skills.
           </p>
           <p>
             Join us for a transformative experience that will equip you with
@@ -101,6 +135,7 @@ function Home() {
       <section className="aftermovies-section">
         <div className="container">
           <h2>Past JXLDS Highlights</h2>
+
           <div className="video-grid">
             <div className="video-card">
               <a
@@ -126,6 +161,7 @@ function Home() {
                 <div className="video-title">JXLDS 13.0 Aftermovie</div>
               </a>
             </div>
+
             <div className="video-card">
               <a
                 href="https://youtu.be/TDn2akRyjys?si=2hPzL_sEHBwJxbNL"
@@ -150,6 +186,7 @@ function Home() {
                 <div className="video-title">JXLDS 12.0 Aftermovie</div>
               </a>
             </div>
+
             <div className="video-card">
               <a
                 href="https://youtu.be/QEYeNG2-c18?si=MyeOC_FCqut7GIYA"
