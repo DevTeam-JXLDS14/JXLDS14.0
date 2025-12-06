@@ -43,7 +43,7 @@ function Home() {
           <h1>JXLDS 14.0</h1>
           <p className="hero-subtitle">Empowering Leaders of Tomorrow</p>
           <p className="hero-description">
-            A 2-day leadership conference by AIESEC in USJ
+            The flagship conference by AIESEC in USJ
           </p>
           <div className="hero-buttons">
             <a href="/register" className="btn btn-primary">
@@ -84,10 +84,9 @@ function Home() {
         <div className="container">
           <h2>About JXLDS 14.0</h2>
           <p>
-            JXLDS (Junior Executive Leadership Development Seminar) is AIESEC
-            USJ's flagship leadership conference. This intensive 2-day program
-            develops leadership potential through interactive workshops,
-            insightful sessions, and valuable networking.
+            Jayewardenepura Exchange Leadership Development Seminar (JXLDS) is a 2-day conference organized by
+            AIESEC in University of Sri Jayewardenepura for the 14th consecutive year that creates a common
+            platform for our potential leaders to enhance their leadership skills.
           </p>
           <p>
             Join us for a transformative experience that will equip you with
