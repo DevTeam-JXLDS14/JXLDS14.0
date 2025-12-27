@@ -12,14 +12,6 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link to="/" className="nav-logo">
-          <img
-            src="/images/14.0 Yellow.png"
-            alt="JXLDS 14.0"
-            className="nav-logo-img"
-          />
-        </Link>
-
         <button className="menu-toggle" onClick={toggleMenu}>
           <span></span>
           <span></span>

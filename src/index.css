@@ -6,12 +6,12 @@
 
 :root {
   --primary-color: #ffe81f; /* Star Wars Yellow */
-  --primary-dark: #d4c01b;
+  --primary-dark: #ffe600;
   --secondary-color: #037ef3; /* Jedi Blue */
   --accent-color: #ff3b3b; /* Sith Red */
-  --text-dark: #f0f0f0;
-  --text-medium: #cccccc;
-  --text-light: #aaaaaa;
+  --text-dark: #ffffff;
+  --text-medium: #ffffff;
+  --text-light: #ffffff;
   --bg-light: #1a1a1a;
   --bg-dark: #000000;
   --border-color: rgba(255, 232, 31, 0.3);

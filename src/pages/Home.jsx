@@ -51,7 +51,11 @@ function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>JXLDS 14.0</h1>
+          <img
+            src="/images/14.0 Yellow.png"
+            alt="JXLDS 14.0"
+            className="hero-logo"
+          />
           <p className="hero-subtitle">Jayewardenepura Exchange Leadership Development Seminar</p>
           <p className="hero-description">
             The Annual 2-day Leadership Conference Organized by AIESEC in University of Sri
@@ -60,7 +64,16 @@ function Home() {
             <a href="/register" className="btn btn-primary">
               Register Now
             </a>
-            <a href="#about" className="btn btn-secondary">
+            <a
+              href="#about"
+              className="btn btn-secondary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("about").scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
               Learn More
             </a>
           </div>
@@ -120,16 +133,10 @@ function Home() {
         <div className="container">
           <h2>About JXLDS 14.0</h2>
           <p>
-            JXLDS (Junior Executive Leadership Development Seminar) is AIESEC
-            USJ's flagship leadership conference. This intensive 2-day program
-            develops leadership potential through interactive workshops,
-            insightful sessions, and valuable networking.
+            JXLDS (Jayewardenepura Exchange Leadership Development Seminar) is AIESEC in USJ's flagship leadership conference. This intensive 2-day program develops leadership potential through interactive workshops, insightful sessions, and valuable networking.
           </p>
           <p>
-            Join us for a transformative experience that will equip you with
-            essential leadership skills, broaden your perspectives, and connect
-            you with passionate individuals committed to making a positive
-            impact.
+            Join us for a transformative experience that will equip you with essential leadership skills, broaden your perspectives, and connect you with passionate individuals committed to making a positive impact.
           </p>
 
           <div className="expect-grid">
