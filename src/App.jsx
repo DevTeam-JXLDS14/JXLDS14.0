@@ -13,6 +13,9 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <video autoPlay loop muted playsInline className="app-background-video">
+          <source src="/video/313130.webm" type="video/webm" />
+        </video>
         <Navbar />
         <main>
           <Routes>
