@@ -5,9 +5,13 @@ export const facilitators = [
     name: "Chair",
     expertise: "Conference Chair",
     bio: "",
-    image: "🪑",
-    isChair: true,
-    isEmoji: true,
+    image: "/images/facilitators/Chair.webp",
+  },
+  {
+    name: "Savindu",
+    expertise: "Facilitator",
+    bio: "",
+    image: "/images/facilitators/savindu.webp",
   },
   {
     name: "Amaya",
@@ -98,11 +102,5 @@ export const facilitators = [
     expertise: "Facilitator",
     bio: "",
     image: "/images/facilitators/yehani.webp",
-  },
-  {
-    name: "Savindu",
-    expertise: "Facilitator",
-    bio: "",
-    image: "/images/facilitators/savindu.webp",
   },
 ];

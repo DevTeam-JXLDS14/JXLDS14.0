@@ -14,7 +14,7 @@ function Navbar() {
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           <img
-            src="/images/logo.png"
+            src="/images/14.0 Yellow.png"
             alt="JXLDS 14.0"
             className="nav-logo-img"
           />
