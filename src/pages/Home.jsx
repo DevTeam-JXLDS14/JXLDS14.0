@@ -1,5 +1,16 @@
 import "./Home.css";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCalendarAlt,
+  faMapMarkerAlt,
+  faClock,
+  faHandshake,
+  faGlobe,
+  faMicrophone,
+  faScroll,
+  faUtensils,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
@@ -41,10 +52,10 @@ function Home() {
       <section className="hero">
         <div className="hero-content">
           <h1>JXLDS 14.0</h1>
-          <p className="hero-subtitle">Empowering Leaders of Tomorrow</p>
+          <p className="hero-subtitle">Jayewardenepura Exchange Leadership Development Seminar</p>
           <p className="hero-description">
-            A 2-day leadership conference by AIESEC in USJ
-          </p>
+            The Annual 2-day Leadership Conference Organized by AIESEC in University of Sri
+            Jayewardenepura.</p>
           <div className="hero-buttons">
             <a href="/register" className="btn btn-primary">
               Register Now
@@ -56,7 +67,7 @@ function Home() {
 
           {/* Countdown Timer */}
           <div className="countdown-timer">
-            <h3 className="countdown-title">Event Starts In</h3>
+            <h2 className="countdown-title">Event Starts In</h2>
             <div className="countdown-boxes">
               <div className="countdown-box">
                 <span className="countdown-value">{timeLeft.days}</span>
@@ -74,6 +85,31 @@ function Home() {
                 <span className="countdown-value">{timeLeft.seconds}</span>
                 <span className="countdown-label">Seconds</span>
               </div>
+            </div>
+          </div>
+
+          {/* Event Details */}
+          <div className="event-details-boxes">
+            <div className="event-detail-box">
+              <span className="event-icon">
+                <FontAwesomeIcon icon={faCalendarAlt} />
+              </span>
+              <span className="event-label">Date</span>
+              <span className="event-value">Jan 30-31, 2026</span>
+            </div>
+            <div className="event-detail-box">
+              <span className="event-icon">
+                <FontAwesomeIcon icon={faMapMarkerAlt} />
+              </span>
+              <span className="event-label">Venue</span>
+              <span className="event-value">TBA</span>
+            </div>
+            <div className="event-detail-box">
+              <span className="event-icon">
+                <FontAwesomeIcon icon={faClock} />
+              </span>
+              <span className="event-label">Duration</span>
+              <span className="event-value">2 Days</span>
             </div>
           </div>
         </div>
@@ -95,6 +131,44 @@ function Home() {
             you with passionate individuals committed to making a positive
             impact.
           </p>
+
+          <div className="expect-grid">
+            <div className="expect-card">
+              <div className="expect-icon">
+                <FontAwesomeIcon icon={faHandshake} />
+              </div>
+              <h3>Interactive Workshops</h3>
+              <p>Engage in hands-on leadership training</p>
+            </div>
+            <div className="expect-card">
+              <div className="expect-icon">
+                <FontAwesomeIcon icon={faGlobe} />
+              </div>
+              <h3>Networking</h3>
+              <p>Connect with like-minded peers</p>
+            </div>
+            <div className="expect-card">
+              <div className="expect-icon">
+                <FontAwesomeIcon icon={faMicrophone} />
+              </div>
+              <h3>Expert Sessions</h3>
+              <p>Learn from industry leaders</p>
+            </div>
+            <div className="expect-card">
+              <div className="expect-icon">
+                <FontAwesomeIcon icon={faScroll} />
+              </div>
+              <h3>Certification</h3>
+              <p>Receive a certificate of participation</p>
+            </div>
+            <div className="expect-card">
+              <div className="expect-icon">
+                <FontAwesomeIcon icon={faUtensils} />
+              </div>
+              <h3>All Inclusive</h3>
+              <p>Meals & refreshments provided</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -184,7 +258,7 @@ function Home() {
         <div className="container">
           <h2>Ready to Take the Lead?</h2>
           <p>Join JXLDS 14.0 and embark on your leadership journey</p>
-          <a href="/register" className="btn btn-primary">
+          <a href="/register" className="btn btn-secondary">
             Register Now
           </a>
         </div>

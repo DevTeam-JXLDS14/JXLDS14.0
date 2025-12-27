@@ -5,13 +5,20 @@
 }
 
 :root {
-  --primary-color: #037ef3;
-  --primary-dark: #0262c4;
-  --text-dark: #1a1a1a;
-  --text-medium: #444;
-  --text-light: #666;
-  --bg-light: #f8f9fa;
-  --border-color: #f0f0f0;
+  --primary-color: #ffe81f; /* Star Wars Yellow */
+  --primary-dark: #d4c01b;
+  --secondary-color: #037ef3; /* Jedi Blue */
+  --accent-color: #ff3b3b; /* Sith Red */
+  --text-dark: #f0f0f0;
+  --text-medium: #cccccc;
+  --text-light: #aaaaaa;
+  --bg-light: #1a1a1a;
+  --bg-dark: #000000;
+  --border-color: rgba(255, 232, 31, 0.3);
+  --glass-bg: rgba(0, 0, 0, 0.7);
+  --glass-border: 1px solid rgba(255, 232, 31, 0.2);
+  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  --glass-backdrop: blur(5px);
 }
 
 body {
@@ -20,7 +27,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-dark);
-  background-color: #ffffff;
+  background-color: var(--bg-dark);
   line-height: 1.6;
   overflow-x: hidden;
   width: 100%;
