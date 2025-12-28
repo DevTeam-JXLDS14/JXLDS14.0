@@ -16,12 +16,23 @@
 .card-golden {
   background: linear-gradient(135deg, rgba(244, 229, 194, 0.2) 0%, rgba(255, 215, 0, 0.2) 50%, rgba(244, 229, 194, 0.2) 100%);
   border: 1px solid #d4af37;
-  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
   backdrop-filter: blur(5px);
+  animation: goldenGlow 2s infinite alternate;
+}
+
+@keyframes goldenGlow {
+  from {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  }
+  to {
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.9);
+  }
 }
 
 .card-golden:hover {
-  box-shadow: 0 6px 24px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 50px rgba(255, 215, 0, 1);
+  transform: scale(1.02);
 }
 
 .card-golden .card-role {
@@ -77,7 +88,7 @@
 }
 
 .card-name {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0;
   color: white;
   word-wrap: break-word;
@@ -86,7 +97,7 @@
 
 .card-role {
   font-size: 1rem;
-  color: white;
+  color: #ffe81f;
   margin: 0 0 0.5rem 0;
   font-weight: 600;
   word-wrap: break-word;
