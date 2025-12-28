@@ -5,9 +5,8 @@
 .page-header {
   background: transparent;
   color: white;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem 4rem;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 232, 31, 0.2);
 }
 
 .page-header h1 {
@@ -53,28 +52,32 @@
 }
 
 .purchase-info {
-  background: #f8f9fa;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  border: var(--glass-border);
   padding: 2rem;
   border-radius: 8px;
   margin-top: 3rem;
+  box-shadow: var(--glass-shadow);
 }
 
 .purchase-info h2 {
-  color: #037ef3;
+  color: white;
   margin-bottom: 1rem;
 }
 
 .purchase-info p {
   font-size: 1rem;
   line-height: 1.8;
-  color: #444;
+  color: var(--text-medium);
   margin-bottom: 1rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .purchase-info strong {
-  color: #037ef3;
+  color: var(--primary-color);
   word-break: break-word;
 }
 
@@ -107,7 +110,7 @@
 
 @media (max-width: 480px) {
   .page-header {
-    padding: 2rem 0.75rem;
+    padding: 8rem 0.75rem 4rem;
   }
 
   .page-header h1 {

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -10,9 +10,6 @@ import Store from "./pages/Store";
 import "./App.css";
 
 function AppContent() {
-  const location = useLocation();
-  const isHome = location.pathname === "/";
-
   return (
     <div className="App">
       <video autoPlay loop muted playsInline className="app-background-video">
@@ -36,7 +33,7 @@ function AppContent() {
           <Route path="/store" element={<Store />} />
         </Routes>
       </main>
-      {!isHome && <Footer />}
+      <Footer />
     </div>
   );
 }

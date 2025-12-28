@@ -29,13 +29,6 @@ function Register() {
               Loading…
             </iframe>
           </div>
-
-          <div className="contact-info">
-            <h3>Need Help?</h3>
-            <p>Questions about registration? Contact us:</p>
-            <p>Email: info@jxlds.com</p>
-            <p>Phone: +94 XX XXX XXXX</p>
-          </div>
         </div>
       </div>
     </div>

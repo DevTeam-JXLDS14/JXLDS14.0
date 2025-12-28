@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   background: var(--glass-bg);
   backdrop-filter: var(--glass-backdrop);
   -webkit-backdrop-filter: var(--glass-backdrop);
@@ -39,7 +40,7 @@
 }
 
 .card-clickable {
-  cursor: pointer;
+  cursor: default;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -47,7 +48,7 @@
 
 .card-image {
   width: 100%;
-  height: 250px;
+  height: 220px;
   overflow: hidden;
   background-color: #f0f0f0;
 }
@@ -70,21 +71,22 @@
 }
 
 .card-content {
-  padding: 1.5rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   flex: 1;
+  text-align: center;
 }
 
 .card-name {
-  font-size: 1.25rem;
-  margin: 0 0 0.5rem 0;
-  color: #1a1a1a;
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .card-role {
   font-size: 1rem;
-  color: #037ef3;
+  color: white;
   margin: 0 0 0.5rem 0;
   font-weight: 600;
   word-wrap: break-word;
@@ -93,75 +95,46 @@
 
 .card-bio {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-medium);
   line-height: 1.5;
   margin: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
+
 }
 
 .card-footer {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 1rem 1rem 1rem;
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
-.card-instagram-link {
+.card-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  width: 100%;
-  padding: 0.75rem;
-  background: linear-gradient(
-    135deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.9rem;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
 }
 
-.card-instagram-link:hover {
+.card-social-link:hover {
+  background: var(--primary-color);
+  color: black;
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px rgba(255, 232, 31, 0.4);
 }
 
-.card-instagram-link svg {
+.card-social-link svg {
   width: 20px;
   height: 20px;
-}
-
-.card-linkedin-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  width: 100%;
-  padding: 0.75rem;
-  background: #0077b5;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.card-linkedin-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  background: #006399;
 }
 
 @media (max-width: 768px) {

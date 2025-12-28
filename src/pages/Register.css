@@ -1,6 +1,6 @@
 .register-page {
   min-height: 100vh;
-  padding: 2rem;
+  padding: 8rem 2rem 2rem;
 }
 
 .register-header {
@@ -11,7 +11,6 @@
   margin: -2rem -2rem 2rem -2rem;
   width: calc(100% + 4rem);
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(255, 232, 31, 0.2);
 }
 
 .register-header h1 {
@@ -28,7 +27,7 @@
 }
 
 .register-content {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   display: block;
 }
@@ -64,7 +63,7 @@
 }
 
 .info-item strong {
-  color: #037ef3;
+  color: var(--primary-color);
   display: inline-block;
   min-width: 150px;
 }
@@ -81,19 +80,23 @@
 }
 
 .form-container {
-  background: white;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  border: var(--glass-border);
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--glass-shadow);
+  text-align: center;
 }
 
 .form-container h2 {
-  color: #037ef3;
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
 .form-instruction {
-  color: #666;
+  color: var(--text-medium);
   margin-bottom: 2rem;
 }
 
@@ -104,29 +107,31 @@
 }
 
 .form-note {
-  background: #fff3cd;
+  background: rgba(255, 232, 31, 0.1);
   padding: 1rem;
   border-radius: 4px;
-  color: #856404;
+  color: var(--primary-color);
   margin-top: 1rem;
   font-size: 0.9rem;
+  border: 1px solid rgba(255, 232, 31, 0.3);
 }
 
 .contact-info {
   margin-top: 2rem;
   padding: 1.5rem;
-  background: #f8f9fa;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .contact-info h3 {
-  color: #037ef3;
+  color: white;
   margin-bottom: 1rem;
 }
 
 .contact-info p {
   margin-bottom: 0.5rem;
-  color: #444;
+  color: var(--primary-color);
 }
 
 @media (max-width: 968px) {
@@ -175,7 +180,7 @@
 
 @media (max-width: 480px) {
   .register-page {
-    padding: 0.5rem;
+    padding: 8rem 0.5rem 2rem;
   }
 
   .register-header {

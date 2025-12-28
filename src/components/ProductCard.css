@@ -35,21 +35,21 @@
 .product-name {
   font-size: 1.25rem;
   margin: 0 0 0.5rem 0;
-  color: #1a1a1a;
+  color: var(--primary-color);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .product-price {
   font-size: 1.5rem;
-  color: #037ef3;
+  color: white;
   margin: 0 0 1rem 0;
   font-weight: bold;
 }
 
 .product-description {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-medium);
   line-height: 1.5;
   margin: 0 0 1.5rem 0;
   word-wrap: break-word;
@@ -59,17 +59,20 @@
 .product-button {
   width: 100%;
   padding: 0.75rem 1.5rem;
-  background-color: #037ef3;
-  color: white;
-  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
   border-radius: 4px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  backdrop-filter: blur(4px);
 }
 
 .product-button:hover {
-  background-color: #0262c4;
+  background-color: rgba(255, 232, 31, 0.1);
+  box-shadow: 0 0 15px rgba(255, 232, 31, 0.3);
 }
 
 @media (max-width: 768px) {

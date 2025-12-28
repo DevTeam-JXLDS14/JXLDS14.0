@@ -43,7 +43,7 @@ function Navbar() {
               className="nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
-              OC Team
+              OC Vanguards
             </Link>
           </li>
           <li className="nav-item">

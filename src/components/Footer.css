@@ -4,7 +4,7 @@
   -webkit-backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 232, 31, 0.2);
   color: var(--text-dark);
-  padding: 3rem 2rem 1rem;
+  padding: 1.5rem 2rem;
   margin-top: 4rem;
 }
 
@@ -76,8 +76,7 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid #333;
-  padding-top: 1rem;
+  padding-top: 0;
   text-align: center;
 }
 
