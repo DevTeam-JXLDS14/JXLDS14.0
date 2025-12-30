@@ -53,7 +53,7 @@ function Home() {
       <section className="hero">
         <div className="hero-content">
           <img
-            src="/images/14.0 Yellow.png"
+            src="/images/14.0 Yellow.webp"
             alt="JXLDS 14.0"
             className="hero-logo"
           />

@@ -3,7 +3,7 @@ import './RoomAllocation.css';
 
 // Placeholder URL - User needs to replace this with their published Google Sheet CSV URL
 // To get this: Open Google Sheet -> File -> Share -> Publish to web -> Select Sheet -> CSV -> Publish -> Copy Link
-const GOOGLE_SHEET_CSV_URL = "NONE"; 
+const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmt3ka2HE9LPraWbXLAH5iyQym__xcxIJmobpwZaYdB6UuJQ0aElmPbxLjaH12NGwo6B0IfMgWNHMm/pub?gid=0&single=true&output=csv"; 
 
 function RoomAllocation() {
   const [delegates, setDelegates] = useState([]);
@@ -56,7 +56,7 @@ function RoomAllocation() {
           else if (header.includes('keyholder')) {
             // Check for various truthy values
             const lowerValue = value.toLowerCase();
-            entry.isKeyholder = lowerValue === 'KH' || 
+            entry.isKeyholder = lowerValue === 'kh' || 
                                lowerValue === 'true' || 
                                lowerValue === 'yes' || 
                                lowerValue === 'checked' || 
@@ -122,7 +122,7 @@ function RoomAllocation() {
     <div className="room-allocation-container">
       <div className="room-allocation-header">
         <h1>Delegate Room Allocation</h1>
-        <p>Find your room number by searching for your name.</p>
+        <p>Find your allocated room by searching for your name or room number.</p>
       </div>
 
       <div className="search-container">
@@ -142,11 +142,6 @@ function RoomAllocation() {
       ) : error ? (
         <div className="error-container">
           <p>{error}</p>
-          {GOOGLE_SHEET_CSV_URL === "NONE" && (
-            <p style={{fontSize: '0.8rem', marginTop: '1rem', color: '#ccc'}}>
-              Note: The Google Sheet URL has not been configured yet. Showing dummy data.
-            </p>
-          )}
         </div>
       ) : (
         <div className="rooms-container">
@@ -164,8 +159,8 @@ function RoomAllocation() {
                       <div className="delegate-header">
                         <h3 className="delegate-name">
                           {delegate.name}
-                          {delegate.isKeyholder && <span className="keyholder-badge" title="Keyholder">🔑</span>}
                         </h3>
+                        {delegate.isKeyholder && <div className="keyholder-tag">Keyholder</div>}
                       </div>
                       <div className="delegate-details">
                         <div className="detail-row">

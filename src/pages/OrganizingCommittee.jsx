@@ -17,7 +17,7 @@ function OrganizingCommittee() {
     <div className="oc-page">
       <div className="page-header">
         <img
-          src="/images/OC Logo Yellow.png"
+          src="/images/OC Logo Yellow.webp"
           alt="OC Logo"
           className="oc-logo"
         />

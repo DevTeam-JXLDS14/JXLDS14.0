@@ -14,14 +14,14 @@
 }
 
 .register-header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   color: var(--primary-color);
   text-shadow: 0 0 10px rgba(255, 232, 31, 0.3);
 }
 
 .register-header p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: 0.9;
   color: var(--text-medium);
 }
