@@ -3,9 +3,9 @@ import { facilitators } from "../data/facilitators";
 import "./Facilitators.css";
 
 function Facilitators() {
-  const chair = facilitators.find((f) => f.expertise === "To be revealed");
+  const chair = facilitators.find((f) => f.expertise === "To be Revealed");
   const otherFacilitators = facilitators.filter(
-    (f) => f.expertise !== "To be revealed"
+    (f) => f.expertise !== "To be Revealed"
   );
 
   return (

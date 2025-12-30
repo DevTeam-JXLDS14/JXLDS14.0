@@ -3,7 +3,7 @@
 export const facilitators = [
   {
     name: "Chair Person",
-    expertise: "To be revealed",
+    expertise: "To be Revealed",
     bio: "",
     image: "/images/facilitators/Chair.webp",
   },
