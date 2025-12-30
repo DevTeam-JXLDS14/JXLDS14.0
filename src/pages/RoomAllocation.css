@@ -1,0 +1,242 @@
+.room-allocation-container {
+  min-height: 100vh;
+  padding: 8rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.room-allocation-header {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+  background: transparent;
+  color: white;
+  margin: -2rem -2rem 2rem -2rem;
+  width: calc(100% + 4rem);
+  box-sizing: border-box;
+}
+
+.room-allocation-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(255, 232, 31, 0.3);
+}
+
+.room-allocation-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: var(--text-medium);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(255, 232, 31, 0.3);
+}
+
+.rooms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.rooms-container p {
+  font-style: normal;
+  color: #ffffff;
+}
+
+.room-group {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.room-header {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+}
+
+.delegates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.delegate-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.delegate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: var(--primary-color);
+}
+
+.keyholder-card {
+  border: 2px solid #ffd700; /* Gold border for keyholder */
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.keyholder-card:hover {
+  border-color: #ffd700;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+.delegate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.delegate-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.keyholder-card .delegate-name {
+  color: #ffd700; /* Gold text for keyholder name */
+}
+
+.keyholder-badge {
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
+}
+
+.delegate-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ccc;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #aaa;
+  min-width: 70px;
+}
+
+.loading-container, .error-container {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.error-container {
+  border: 1px solid #ff4444;
+  color: #ff4444;
+}
+
+.no-results {
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 2rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .room-allocation-container {
+    padding: 1rem;
+  }
+
+  .room-allocation-header {
+    margin: -1rem -1rem 1.5rem -1rem;
+    padding: 2rem 1rem;
+  }
+
+  .room-allocation-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .room-allocation-header p {
+    font-size: 1rem;
+  }
+  
+  .delegates-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .room-allocation-container {
+    padding: 8rem 0.5rem 2rem;
+  }
+
+  .room-allocation-header {
+    margin: -0.5rem -0.5rem 1rem -0.5rem;
+    padding: 1.75rem 0.75rem;
+    width: calc(100% + 1rem);
+  }
+
+  .room-allocation-header h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .room-allocation-header p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  .search-input {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  
+  .room-header {
+    font-size: 1.5rem;
+  }
+}

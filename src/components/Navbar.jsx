@@ -57,6 +57,15 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
+              to="/room-allocation"
+              className="nav-link"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Room Allocation
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
               to="/store"
               className="nav-link"
               onClick={() => setIsMenuOpen(false)}

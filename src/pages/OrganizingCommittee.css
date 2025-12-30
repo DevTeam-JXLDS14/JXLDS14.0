@@ -27,6 +27,10 @@
   .page-header {
     padding: 6rem 1.5rem 3rem;
   }
+
+  .team-intro {
+    margin-bottom: 4rem;
+  }
 }
 
 .page-header h1 {
@@ -296,8 +300,13 @@
     padding: 2rem 1rem;
   }
 
+  .team-intro {
+    margin-bottom: 2rem;
+  }
+
   .team-intro p {
     font-size: 1rem;
+    margin: 0 auto;
   }
 }
 
@@ -320,13 +329,14 @@
   }
 
   .team-intro {
-    margin-bottom: 1.75rem;
+    margin-bottom: 2rem;
   }
 
   .team-intro p {
     font-size: 0.9rem;
-    padding: 0 0.25rem;
+    padding: 0 1rem;
     line-height: 1.7;
+    margin: 0 auto;
   }
 
   .cards-grid {

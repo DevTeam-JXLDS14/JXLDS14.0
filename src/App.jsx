@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import RegistrationsGoogle from "./pages/RegistrationsGoogle";
+import RoomAllocation from "./pages/RoomAllocation";
 import OrganizingCommittee from "./pages/OrganizingCommittee";
 import Facilitators from "./pages/Facilitators";
 import Store from "./pages/Store";
@@ -25,6 +26,7 @@ function AppContent() {
             path="/registrationsgoogle"
             element={<RegistrationsGoogle />}
           />
+          <Route path="/room-allocation" element={<RoomAllocation />} />
           <Route
             path="/organizing-committee"
             element={<OrganizingCommittee />}
