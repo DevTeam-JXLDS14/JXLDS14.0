@@ -7,11 +7,16 @@ function Store() {
     <div className="store-page">
       <div className="page-header">
         <h1>JXLDS 14.0 Merchandise</h1>
-        <p>Get your exclusive JXLDS gear</p>
+        <p>Get your JXLDS merch.</p>
       </div>
 
       <div className="container">
-        <div className="store-intro">
+        <div className="opening-soon">
+          <h2>Opening Soon...</h2>
+          <p>Stay tuned for exciting reveal of our JXLDS merchandise!</p>
+        </div>
+
+        {/* <div className="store-intro">
           <p>
             Show your JXLDS spirit with exclusive merchandise! All proceeds support 
             our mission to develop the next generation of leaders.
@@ -39,7 +44,7 @@ function Store() {
           <p>
             Pickup available at the event or delivery within Sri Lanka (shipping charges apply).
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
