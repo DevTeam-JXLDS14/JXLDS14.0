@@ -21,6 +21,11 @@
   --glass-backdrop: blur(5px);
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -31,12 +36,15 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   width: 100%;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
 }
 
 #root {
   min-height: 100vh;
   overflow-x: hidden;
   width: 100%;
+  position: relative;
 }
 
 a {
