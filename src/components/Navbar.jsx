@@ -66,7 +66,7 @@ function Navbar() {
           </li> */}
           <li className="nav-item">
             <Link
-              to="/store"
+              to="/merch"
               className="nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
