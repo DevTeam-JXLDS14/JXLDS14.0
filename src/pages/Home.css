@@ -57,23 +57,23 @@
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: bold;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  word-wrap: normal;
+  overflow-wrap: normal;
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
   margin-bottom: 0.25rem;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  word-wrap: normal;
+  overflow-wrap: normal;
 }
 
 .hero-description {
   font-size: 1rem;
   margin-bottom: 2rem;
   opacity: 0.9;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  word-wrap: normal;
+  overflow-wrap: normal;
 }
 
 .hero-buttons {
@@ -165,10 +165,11 @@
   line-height: 1.8;
   color: var(--text-dark);
   margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
   text-align: center;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  word-wrap: normal;
+  overflow-wrap: normal;
+  hyphens: none;
 }
 
 .video-grid {
@@ -179,6 +180,34 @@
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.reveal-section {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  position: relative;
+}
+
+.reveal-section::before {
+  content: "";
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  background: rgba(255, 232, 31, 0.3);
+  margin: 0 auto 2rem auto;
+}
+
+.reveal-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(255, 232, 31, 0.3);
+}
+
+.reveal-section .video-grid {
+  margin-top: 1rem;
 }
 
 .video-card {
@@ -439,7 +468,7 @@
 .expect-card p {
   font-size: 0.95rem;
   color: var(--text-medium);
-  margin-bottom: 0;
+  margin: 0 0 0 0;
   text-align: center;
 }
 

@@ -63,8 +63,8 @@
   color: var(--text-dark);
   max-width: 800px;
   margin: -2rem auto;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  word-wrap: normal;
+  overflow-wrap: normal;
 }
 
 .role-section {
