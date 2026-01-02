@@ -50,6 +50,7 @@
 
 .nav-item {
   margin: 0;
+  cursor: pointer;
 }
 
 .nav-link {
@@ -83,6 +84,16 @@
   background-color: white;
   margin: 3px 0;
   transition: 0.3s;
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .nav-link {
+    font-size: 0.85rem;
+  }
+
+  .nav-menu {
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 768px) {

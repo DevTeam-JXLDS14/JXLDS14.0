@@ -50,7 +50,13 @@ function Facilitators() {
                 <Card
                   key={index}
                   image={facilitator.image}
-                  name={facilitator.name}
+                  name={
+                    <>
+                      {facilitator.name.split(" ")[0]}
+                      <br />
+                      {facilitator.name.split(" ").slice(1).join(" ")}
+                    </>
+                  }
                   role={facilitator.expertise}
                   bio={facilitator.bio}
                   instagram={facilitator.instagram}

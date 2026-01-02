@@ -37,21 +37,29 @@ function OrganizingCommittee() {
 
         return (
           <div key={role} className="role-section">
-            <div className="container">
-              <h2 className="role-title">{role}</h2>
-              <div className="cards-grid">
-                {members.map((member, index) => (
-                  <Card
-                    key={index}
-                    image={member.image}
-                    name={member.name}
-                    instagram={member.instagram}
-                    linkedin={member.linkedin}
-                  />
-                ))}
-              </div>
+          <div className="container">
+            <h2 className="role-title">{role}</h2>
+            <div className="cards-grid">
+              {members.map((member, index) => (
+                <Card
+                  key={index}
+                  image={member.image}
+                  
+                  name={
+                    <>
+                      {member.name.split(" ")[0]}
+                      <br />
+                      {member.name.split(" ").slice(1).join(" ")}
+                    </>
+                  }
+                  
+                  instagram={member.instagram}
+                  linkedin={member.linkedin}
+                />
+              ))}
             </div>
           </div>
+        </div>
         );
       })}
     </div>

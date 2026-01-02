@@ -90,10 +90,10 @@
 
 .card-name {
   font-size: 1rem;
-  margin: 0;
   color: white;
-  word-wrap: normal;
-  overflow-wrap: normal;
+  width: 100%; /* Make sure this is 100% or auto, NOT min-content */
+  text-align: center;
+  line-height: 1.2;
 }
 
 .card-role {
@@ -171,6 +171,10 @@
 
   .card-image {
     height: 200px;
+  }
+
+  .card-image img {
+    object-position: center 20%;
   }
 
   .card-content {
