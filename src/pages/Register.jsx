@@ -9,13 +9,16 @@ function Register() {
       </div>
 
       <div className="register-content">
-        <div className="form-container">
+        <div className="opening-soon">
+          <h2>Get Ready for the Next Round</h2>
+          <p>Stay tuned for the next opening...</p>
+        </div>
+        {/* <div className="form-container">
           <h2>Registration Form</h2>
           <p className="form-instruction">
             Please fill out the form below to register for JXLDS 14.0
           </p>
 
-          {/* Tally Form Embed */}
           <div className="form-embed">
             <iframe
               src="https://tally.so/embed/nPMpre?alignLeft=1&hideTitle=1&dynamicHeight=1"
@@ -29,7 +32,7 @@ function Register() {
               Loading…
             </iframe>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

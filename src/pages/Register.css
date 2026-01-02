@@ -262,3 +262,35 @@
     padding: 0.25rem;
   }
 }
+
+.opening-soon {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  border: var(--glass-border);
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+@keyframes pulseFade {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.opening-soon h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 232, 31, 0.3);
+  animation: pulseFade 3s infinite ease-in-out;
+}
+
+.opening-soon p {
+  color: var(--text-medium);
+  font-size: 1.1rem;
+  animation: pulseFade 3s infinite ease-in-out;
+}
+
