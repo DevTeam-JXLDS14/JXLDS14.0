@@ -312,7 +312,7 @@
 
 @media (max-width: 480px) {
   .page-header {
-    padding: 8rem 0.75rem 4rem;
+    padding: 8rem 1.5rem 4rem;
   }
 
   .page-header h1 {
@@ -325,7 +325,9 @@
   }
 
   .container {
-    padding: 1.5rem 0.75rem;
+    padding: 1.5rem 1rem;
+    width: 60%;
+    margin: 0 auto;
   }
 
   .team-intro {

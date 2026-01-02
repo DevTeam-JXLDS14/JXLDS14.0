@@ -249,6 +249,10 @@
 }
 
 @media (max-width: 480px) {
+  .form-wrapper {
+    padding: 1.5rem;
+  }
+
   .custom-registration-form {
     padding: 1.5rem 1rem;
   }

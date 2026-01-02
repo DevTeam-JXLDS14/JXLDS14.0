@@ -565,7 +565,7 @@
   }
 
   .hero {
-    padding: 8rem 0.75rem 1.5rem 0.75rem;
+    padding: 8rem 1.5rem 1.5rem 1.5rem;
     min-height: auto;
   }
 
@@ -587,7 +587,7 @@
   .about-section,
   .aftermovies-section,
   .cta-section {
-    padding: 1rem 0.75rem;
+    padding: 1rem 1.5rem;
   }
 
   .about-section h2,

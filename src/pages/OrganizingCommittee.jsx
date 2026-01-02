@@ -5,12 +5,12 @@ import "./OrganizingCommittee.css";
 function OrganizingCommittee() {
   const roles = [
     "Organizing Committee President",
-    "Organizing Committee Vice President - Finance",
-    "Organizing Committee Vice President - Partnership Development",
-    "Organizing Committee Vice President - Logistics",
-    "Organizing Committee Vice President - Delegates",
-    "Organizing Committee Vice President - Events",
-    "Organizing Committee Vice President - Marketing",
+    "Organizing Committee Vice President Finance",
+    "Organizing Committee Vice President Partnership Development",
+    "Organizing Committee Vice President Logistics",
+    "Organizing Committee Vice President Delegates",
+    "Organizing Committee Vice President Events",
+    "Organizing Committee Vice President Marketing",
   ];
 
   return (
