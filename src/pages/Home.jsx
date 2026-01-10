@@ -23,7 +23,7 @@ function Home() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const eventDate = new Date("2026-01-30T00:00:00").getTime();
+      const eventDate = new Date("2026-01-24T00:00:00").getTime();
       const now = new Date().getTime();
       const difference = eventDate - now;
 
@@ -109,7 +109,7 @@ function Home() {
                 <FontAwesomeIcon icon={faCalendarAlt} />
               </span>
               <span className="event-label">Date</span>
-              <span className="event-value">Jan 30-31, 2026</span>
+              <span className="event-value">Jan 24-25, 2026</span>
             </div>
             <div className="event-detail-box">
               <span className="event-icon">
