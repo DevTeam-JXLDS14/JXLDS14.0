@@ -116,7 +116,7 @@ function Home() {
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
               </span>
               <span className="event-label">Venue</span>
-              <span className="event-value">TBA</span>
+              <span className="event-value">Lavanga Beach Hotel, Hikkaduwa</span>
             </div>
             <div className="event-detail-box">
               <span className="event-icon">

@@ -390,8 +390,8 @@
   border: var(--glass-border);
   border-radius: 12px;
   padding: 1rem 1.5rem;
-  width: 180px; /* Fixed width for consistency */
-  height: 140px; /* Fixed height for consistency */
+  width: 200px; /* Fixed width for consistency */
+  height: 150px; /* Fixed height for consistency */
   display: flex;
   flex-direction: column;
   align-items: center;
