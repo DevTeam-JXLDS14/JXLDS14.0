@@ -3,7 +3,7 @@ import './RoomAllocation.css';
 
 // Placeholder URL - User needs to replace this with their published Google Sheet CSV URL
 // To get this: Open Google Sheet -> File -> Share -> Publish to web -> Select Sheet -> CSV -> Publish -> Copy Link
-const GOOGLE_SHEET_CSV_URL = "NONE"; 
+const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSkm9yrOq6yOtOCO3AHdGcGQ414yEhQ2ptaMpj_tPlzKlY2CWcbcI8_FNHEhiFEGYWBeGLXPuPJhQf7/pub?gid=0&single=true&output=csv"; 
 
 function RoomAllocation() {
   const [delegates, setDelegates] = useState([]);
@@ -82,26 +82,46 @@ function RoomAllocation() {
 
     const searchLower = searchTerm.toLowerCase();
 
-    // Filter delegates that match the search term (by name or room)
-    const matchingDelegates = delegates.filter(delegate => 
-      (delegate.name && delegate.name.toLowerCase().includes(searchLower)) ||
-      (delegate.room && delegate.room.toLowerCase().includes(searchLower))
-    );
+    // 1. Identify rooms that have at least one matching delegate
+    const matchingRooms = new Set();
+    delegates.forEach(delegate => {
+      if (
+        (delegate.name && delegate.name.toLowerCase().includes(searchLower)) ||
+        (delegate.room && delegate.room.toLowerCase().includes(searchLower))
+      ) {
+        matchingRooms.add(delegate.room);
+      }
+    });
 
-    // Group matching delegates by room
+    if (matchingRooms.size === 0) return {};
+
+    // 2. Get ALL delegates from those rooms
+    const roomDelegates = delegates.filter(d => matchingRooms.has(d.room));
+
+    // 3. Group matching delegates by room
     const grouped = {};
-    matchingDelegates.forEach(delegate => {
+    roomDelegates.forEach(delegate => {
       if (!grouped[delegate.room]) {
         grouped[delegate.room] = [];
       }
       grouped[delegate.room].push(delegate);
     });
 
-    // Sort delegates in each room: Keyholder first, then alphabetical
+    // 4. Sort delegates in each room: Searched Name first, then Keyholder match, then Alphabetical
     Object.keys(grouped).forEach(room => {
       grouped[room].sort((a, b) => {
+        // Priority 1: Matches search name
+        const aMatchesName = a.name && a.name.toLowerCase().includes(searchLower);
+        const bMatchesName = b.name && b.name.toLowerCase().includes(searchLower);
+        
+        if (aMatchesName && !bMatchesName) return -1;
+        if (!aMatchesName && bMatchesName) return 1;
+
+        // Priority 2: Keyholder status
         if (a.isKeyholder && !b.isKeyholder) return -1;
         if (!a.isKeyholder && b.isKeyholder) return 1;
+        
+        // Priority 3: Alphabetical
         return a.name.localeCompare(b.name);
       });
     });

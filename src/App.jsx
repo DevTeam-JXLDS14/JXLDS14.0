@@ -28,7 +28,7 @@ function AppContent() {
             path="/registrationsgoogle"
             element={<RegistrationsGoogle />}
           />
-          {/* <Route path="/room-allocation" element={<RoomAllocation />} /> */}
+          <Route path="/room-allocation" element={<RoomAllocation />} />
           <Route
             path="/organizing-committee"
             element={<OrganizingCommittee />}
