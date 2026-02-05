@@ -55,7 +55,7 @@ function Navbar() {
               Facilitators
             </Link>
           </li>
-          <li className="nav-item">
+          {/*<li className="nav-item">
             <Link
               to="/room-allocation"
               className="nav-link"
@@ -63,7 +63,7 @@ function Navbar() {
             >
               Room Allocation
             </Link>
-          </li>
+          </li>*/}
           {/*<li className="nav-item">
             <Link
               to="/merch"

@@ -3,7 +3,7 @@ import './RoomAllocation.css';
 
 // Placeholder URL - User needs to replace this with their published Google Sheet CSV URL
 // To get this: Open Google Sheet -> File -> Share -> Publish to web -> Select Sheet -> CSV -> Publish -> Copy Link
-const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSkm9yrOq6yOtOCO3AHdGcGQ414yEhQ2ptaMpj_tPlzKlY2CWcbcI8_FNHEhiFEGYWBeGLXPuPJhQf7/pub?gid=0&single=true&output=csv"; 
+const GOOGLE_SHEET_CSV_URL = "NONE"; 
 
 function RoomAllocation() {
   const [delegates, setDelegates] = useState([]);
