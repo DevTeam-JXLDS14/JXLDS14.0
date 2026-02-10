@@ -16,11 +16,11 @@ function Register() {
         <div className="form-container">
           <h2>Registration Form</h2>
           <p className="form-instruction">
-            Please fill out the form below to register for JXLDS 14.0
+            14th iteration already happened. Let's meet again in the next one!
           </p>
 
           <div className="form-embed">
-            <iframe
+            {/*<iframe
               src="https://tally.so/embed/nPMpre?alignLeft=1&hideTitle=1&dynamicHeight=1"
               width="100%"
               height="800"
@@ -30,7 +30,7 @@ function Register() {
               title="JXLDS 14.0 Registration Form"
             >
               Loading…
-            </iframe>
+            </iframe>*/}
           </div>
         </div>
       </div>

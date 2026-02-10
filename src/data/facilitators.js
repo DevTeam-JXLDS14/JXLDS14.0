@@ -2,10 +2,10 @@
 
 export const facilitators = [
   {
-    name: "Chair Person",
-    expertise: "To be Revealed",
+    name: "Kaveen Muhandiramge",
+    expertise: "Chair",
     bio: "",
-    image: "/images/facilitators/Chair.webp",
+    image: "/images/facilitators/Kaveen_Edited.webp",
   },
   {
     name: "Savindu Wijetilleke",

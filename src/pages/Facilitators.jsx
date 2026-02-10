@@ -3,9 +3,9 @@ import { facilitators } from "../data/facilitators";
 import "./Facilitators.css";
 
 function Facilitators() {
-  const chair = facilitators.find((f) => f.expertise === "To be Revealed");
+  const chair = facilitators.find((f) => f.expertise === "Chair");
   const otherFacilitators = facilitators.filter(
-    (f) => f.expertise !== "To be Revealed"
+    (f) => f.expertise !== "Chair"
   );
 
   return (
@@ -24,7 +24,7 @@ function Facilitators() {
       {chair && (
         <div className="role-section">
           <div className="container">
-            <h2 className="role-title">Conference Chair Person</h2>
+            <h2 className="role-title">Conference Chair</h2>
             <div className="cards-grid">
               <Card
                 image={chair.image}

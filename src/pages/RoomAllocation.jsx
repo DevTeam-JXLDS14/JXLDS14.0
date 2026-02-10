@@ -3,7 +3,7 @@ import './RoomAllocation.css';
 
 // Placeholder URL - User needs to replace this with their published Google Sheet CSV URL
 // To get this: Open Google Sheet -> File -> Share -> Publish to web -> Select Sheet -> CSV -> Publish -> Copy Link
-const GOOGLE_SHEET_CSV_URL = "NONE"; 
+const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSkm9yrOq6yOtOCO3AHdGcGQ414yEhQ2ptaMpj_tPlzKlY2CWcbcI8_FNHEhiFEGYWBeGLXPuPJhQf7/pub?gid=0&single=true&output=csv"; 
 
 function RoomAllocation() {
   const [delegates, setDelegates] = useState([]);
@@ -51,7 +51,7 @@ function RoomAllocation() {
           
           if (header.includes('name')) entry.name = value;
           else if (header.includes('gender')) entry.gender = value;
-          else if (header.includes('personal contact number') || header.includes('phone') || header.includes('mobile')) entry.phone = value;
+          else if (header.includes('personal contact number') || header.includes('phone') || header.includes('mobile')) entry.phone = "XXXXXXXXXXX";
           else if (header.includes('room no') || header.includes('room')) entry.room = value;
           else if (header.includes('keyholder')) {
             // Check for various truthy values
